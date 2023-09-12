@@ -20,11 +20,11 @@
         theme: {
           extend: {
             backgroundImage: {
-              "hero-bg1": "url('./images/banners/banner1.png')",
-              "hero-bg2": "url('./images/banners/banner2.png')",
-              "hero-bg3": "url('./images/banners/banner3.png')",
-              "hero-bg4": "url('./images/banners/banner4.png')",
-              "team-bg": "url('./images/others/team.png')",
+              "hero-bg1": "url('./images/banners/banner1.webp')",
+              "hero-bg2": "url('./images/banners/banner2.webp')",
+              "hero-bg3": "url('./images/banners/banner3.webp')",
+              "hero-bg4": "url('./images/banners/banner4.webp')",
+              "team-bg": "url('./images/others/team.webp')",
             },
           },
         },
@@ -67,7 +67,7 @@
               <input
                 type="text"
                 id="email-adress-icon"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-full focus:outline-none sm:text-sm rounded-lg focus:ring-blue-500 block w-full pl-10 p-2"
                 placeholder="Search..."
               />
             </div>
@@ -146,8 +146,10 @@
       </nav>
     </div>
 
+    
+
     <!-- banner slider -->
-    <div class="flex justify-center items-center mb-32 container">
+    <div class="flex justify-center items-center mb-32 container relative">
       <div class="carousel">
         <!-- slide 1 -->
         <div
@@ -229,11 +231,37 @@
       </div>
     </div>
 
+    <!-- fruits section -->
+    <div class="fruits_hero container w-9/12 bg-white absolute right-24 -bottom-16 overflow-hidden">
+      <div class="grid grid-cols-5 gap-4 ">
+        <div class="fruit text-center px-12 py-4">
+          <img src="./images/fruits/fruit4.png" alt="">
+          <p>Banana</p>
+        </div>
+        <div class="fruit   px-12 py-4 text-center w-fullpx-12 py-4">
+          <img src="./images/fruits/fruit5.png" alt="">
+          <p>Banana</p>
+        </div>
+        <div class="fruit   px-12 py-4 text-center w-fullpx-12 py-4">
+          <img src="./images/fruits/fruit9.png" alt="">
+          <p>Banana</p>
+        </div>
+        <div class="fruit   px-12 py-4 text-center w-fullpx-12 py-4">
+          <img src="./images/fruits/fruit7.png" alt="">
+          <p>Banana</p>
+        </div>
+        <div class="fruit   px-12 py-4 text-center w-fullpx-12 py-4">
+          <img src="./images/fruits/fruit8.png" alt="">
+          <p>Banana</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Deal of the day -->
-    <section class="Deal_of_the_day container mb-32">
+    <section class="Deal_of_the_day container md:mb-32">
       <!-- title and timer -->
-      <div class="title_and_timer flex justify-between mb-12">
-        <div class="title w-1/2">
+      <div class="title_and_timer md:justify-between mb-12 md:flex">
+        <div class="title md:w-1/2">
           <h4 class="text-4xl font-semibold mb-4">Deal of the day</h4>
           <p class="leading-6 text-[#12121299]">
             Contrary to popular belief, is not simply random text. It has roots
@@ -271,7 +299,7 @@
         </div>
       </div>
       <!-- cards -->
-      <div class="cards grid grid-cols-4 gap-4">
+      <div class="cards grid lg:grid-cols-4 md:grid-cols-2 md:gap-4 sm:justify-center">
         <div
           class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 px-12 py-4"
         >
@@ -610,7 +638,7 @@
             Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
           </p>
       </div>
-      <div class="grid grid-cols-4 gap-4 ">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 ">
         <!-- member-1 -->
         <div
           class="w-full max-w-sm rounded-lg shadow text-white px-12 py-4 "
@@ -731,7 +759,7 @@
           Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
         </p>
     </div>
-    <div class="grid grid-cols-3 mt-12">
+    <div class="grid lg:grid-cols-3 mt-12">
       <div class="features flex flex-col justify-between">
         <div class="flex items-center">
           <i class="fa-solid fa-people-group"></i>
